@@ -81,15 +81,17 @@ function displayAuthWindow() {
     input.autocomplete = 'off';
     input.placeholder = 'Enter the key here';
 
+    /* Temporarily removed due to lack of asset
     const img = document.createElement('img');
     img.src = './pics/fjrpics.png';
     img.style.width = '100%';
+    */
 
     // Append elements
     divAuth.append(ln1);
     divAuth.append(ln2);
     divAuth.append(input);
-    divAuth.append(img);
+    // divAuth.append(img);
     document.body.prepend(divAuth);
 
     // Listen for input
@@ -114,6 +116,3 @@ try {
 } catch (e) {
     displayAuthWindow(); // fallback
 }
-
-
-// comment
