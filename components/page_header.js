@@ -10,7 +10,7 @@ class pageHeader extends HTMLElement {
     }
 
     async connectedCallback() {
-        const response = await fetch('/components/page_header.html');
+        const response = await fetch('./components/page_header.html');
         const html = await response.text();
 
         // Ensure minimal CLS
