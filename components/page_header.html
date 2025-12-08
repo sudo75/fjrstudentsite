@@ -56,9 +56,10 @@
         padding: 0;
     }
 
-    nav a {
+    ::slotted(a) {
         display: inline-block;
         padding: 0.5rem 0.75rem;
+        margin: 10px;
         border-radius: 8px;
         color: var(--text, #1f2937);
     }
@@ -122,19 +123,9 @@
         </button>
 
         <nav aria-label="Primary">
-            <ul id="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Info</a></li>
-                <li><a href="calendar.html">Updates</a></li>
-                <li><a href="#faculty">Faculty</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li>
-                    <a href="contact.html" class="btn primary"
-                        style="background:#ffffff; color:#c52222; border:1px solid #c52222">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+            <!-- <ul id="menu"> -->
+                <slot></slot>
+            <!-- </ul> -->
         </nav>
 
     </div>
